@@ -1,0 +1,48 @@
+{
+  "name": "EditorCode",
+  "productName": "Editor Code",
+  "version": "1.0.0",
+  "description": "Editor Code",
+  "main": "App/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build"
+  },
+  "build": {
+    "appId": "EditorCode",
+    "compression": "maximum",
+    "icon": "./App/assets/Images/icon.png",
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    },
+    "extraFiles": [
+      {
+        "to": "./resources",
+        "filter": [
+          "./App/assets/Icons",
+          "./App/assets/Images"
+        ]
+      }
+    ]
+  },
+  "author": {
+    "name": "Amir Mohammad",
+    "email": "koshkian1000@gmai.com",
+    "account number payeer": "P1033138596",
+    "bitcoin": "39EfFAs4KFUizf2v3gRLR9hDBVVLCkB6VK"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^5.0.2",
+    "auto-launch": "^5.0.5",
+    "electron-window-state": "^5.0.3",
+    "jquery": "^3.6.0",
+    "knex": "^0.95.6",
+    "node-powershell": "^4.0.0"
+  },
+  "devDependencies": {
+    "electron": "^13.1.2",
+    "electron-builder": "^22.11.7"
+  }
+}
