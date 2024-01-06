@@ -210,8 +210,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 FuncSetLanguageEnglish();
             } else if (val[0]["Language"] === "Hindi") {
                 FuncSetLanguageHindi();
-            } else if (val[0]["Language"] === "Arabic") {
-                FuncSetLanguageArabic();
             } else if (val[0]["Language"] === "Persian") {
                 FuncSetLanguagePersian();
             } else if (val[0]["Language"] === "German") {
@@ -503,75 +501,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     // End Section DataBase For Text Content Hindi
-
-
-    // Start Section DataBase For Text Content Arabic
-    knex.schema.createTableIfNotExists("EditorContentArabic", (TableBuilder) => {
-        TableBuilder.increments("id");
-        TableBuilder.string("TitleStatusBarLeft");
-        TableBuilder.string("TextStatusBarLeft");
-        TableBuilder.string("placeholderNewFile");
-        TableBuilder.string("placeholderNewFolder");
-        TableBuilder.string("placeholderRename");
-        TableBuilder.string("TextButtonDelete");
-        TableBuilder.string("TextButtonCancel");
-        TableBuilder.string("TitleProject");
-        TableBuilder.string("TextProject");
-        TableBuilder.string("TitleIconNewFile");
-        TableBuilder.string("TitleIconNewFolder");
-        TableBuilder.string("TitleIconRefresh");
-        TableBuilder.string("TitleIconMinimize");
-        TableBuilder.string("TitleTerminal");
-        TableBuilder.string("TextTerminal");
-        TableBuilder.string("TextDivStatusBarForNameFile");
-        TableBuilder.string("TextDivStatusBarForModeFile");
-        TableBuilder.string("TextDivStatusBarForLineCol");
-        TableBuilder.string("TitleStatusBarForLockLock");
-        TableBuilder.string("TitleStatusBarForLockOpen");
-        TableBuilder.string("TitleStatusBarForSetModeFile");
-        TableBuilder.string("TextStatusBarTerminal");
-        TableBuilder.string("TitleSectSelectCommand");
-        TableBuilder.string("TitleRunCode");
-        TableBuilder.string("TitleClickClose");
-        TableBuilder.string("TitleMinimizeTerminal");
-    }).then();
-    const FuncInsertDataForTextContentArabic = () => {
-        knex("EditorContentArabic").insert({
-            TitleStatusBarLeft: "إكسبلورر",
-            TextStatusBarLeft: "المشروع",
-            placeholderNewFile: "أدخل اسم الملف",
-            placeholderNewFolder: "أدخل اسم المجلد",
-            placeholderRename: "إدخال اسم",
-            TextButtonDelete: "حذف",
-            TextButtonCancel: "يلغي",
-            TitleProject: "مشروع مفتوح",
-            TextProject: "المشروع",
-            TitleIconNewFile: "ملف جديد في هذا الدليل",
-            TitleIconNewFolder: "مجلد جديد في هذا الدليل",
-            TitleIconRefresh: "مشروع قسم التحديث",
-            TitleIconMinimize: "تصغير قسم المشروع",
-            TitleTerminal: "صالة",
-            TextTerminal: "صالة",
-            TextDivStatusBarForNameFile: "اسم الملف :",
-            TextDivStatusBarForModeFile: "الوضع :",
-            TextDivStatusBarForLineCol: "الخط / العمود :",
-            TitleStatusBarForLockLock: "فتح قفل الصفحة",
-            TitleStatusBarForLockOpen: "تأمين الصفحة",
-            TitleStatusBarForSetModeFile: "تعيين ملف الوضع",
-            TextStatusBarTerminal: "صالة :",
-            TitleSectSelectCommand: "أوامر مهمة",
-            TitleRunCode: "قم بتشغيل الكود",
-            TitleClickClose: "إغلاق المحطة",
-            TitleMinimizeTerminal: "تصغير المحطة",
-        }).then(() => {
-        });
-    };
-    knex("EditorContentArabic").select("*").then((val) => {
-        if (val["length"] === 0) {
-            FuncInsertDataForTextContentArabic();
-        }
-    });
-    // End Section DataBase For Text Content Arabic
 
 
     // Start Section DataBase For Text Content Persian
@@ -1024,39 +953,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }).then();
 
         knex("EditorContentHindi").select("*").then((val) => {
-            DivStatusBarLeft.setAttribute("title", val[0]["TitleStatusBarLeft"]);
-            DivStatusBarLeftP.innerHTML = val[0]["TextStatusBarLeft"];
-            ValueNameFile.setAttribute("placeholder", val[0]["placeholderNewFile"]);
-            ValueNameFolder.setAttribute("placeholder", val[0]["placeholderNewFolder"]);
-            ValueRename.setAttribute("placeholder", val[0]["placeholderRename"]);
-            ButtonDelete.innerHTML = val[0]["TextButtonDelete"];
-            ButtonCancel.innerHTML = val[0]["TextButtonCancel"];
-            OpenDialog.setAttribute("title", val[0]["TitleProject"]);
-            OpenDialogP.innerHTML = val[0]["TextProject"];
-            NewFile.setAttribute("title", val[0]["TitleIconNewFile"]);
-            NewFolder.setAttribute("title", val[0]["TitleIconNewFolder"]);
-            RefreshSectProject.setAttribute("title", val[0]["TitleIconRefresh"]);
-            CloseSectProject.setAttribute("title", val[0]["TitleIconMinimize"]);
-            TerminalClickOpen.setAttribute("title", val[0]["TitleTerminal"]);
-            TerminalClickOpen.innerHTML = val[0]["TextTerminal"];
-            DivStatusBarForNameFile.innerHTML = val[0]["TextDivStatusBarForNameFile"];
-            DivStatusBarForModeFile.innerHTML = val[0]["TextDivStatusBarForModeFile"];
-            DivStatusBarForLineCol.innerHTML = val[0]["TextDivStatusBarForLineCol"];
-            StatusBarForLockLock.setAttribute("title", val[0]["TitleStatusBarForLockLock"]);
-            StatusBarForLockOpen.setAttribute("title", val[0]["TitleStatusBarForLockOpen"]);
-            StatusBarForSetModeFile.setAttribute("title", val[0]["TitleStatusBarForSetModeFile"]);
-            TextStatusBarTerminal.innerHTML = val[0]["TextStatusBarTerminal"];
-            SectSelectCommand.setAttribute("title", val[0]["TitleSectSelectCommand"]);
-            RunCode.setAttribute("title", val[0]["TitleRunCode"]);
-            ClickClose.setAttribute("title", val[0]["TitleClickClose"]);
-            MinimizeTerminal.setAttribute("title", val[0]["TitleMinimizeTerminal"]);
-        });
-    };
-    const FuncSetLanguageArabic = () => {
-        knex("Editor").update("Language", "Arabic", () => {
-        }).then();
-
-        knex("EditorContentArabic").select("*").then((val) => {
             DivStatusBarLeft.setAttribute("title", val[0]["TitleStatusBarLeft"]);
             DivStatusBarLeftP.innerHTML = val[0]["TextStatusBarLeft"];
             ValueNameFile.setAttribute("placeholder", val[0]["placeholderNewFile"]);
@@ -5017,13 +4913,6 @@ Bitcoin : 39EfFAs4KFUizf2v3gRLR9hDBVVLCkB6VK`, "clipboard");
                 icon: ___dirname + "\\assets\\Icons\\Hindi.png",
                 click() {
                     FuncSetLanguageHindi();
-                },
-            },
-            {
-                label: "Language Arabic",
-                icon: ___dirname + "\\assets\\Icons\\Arabic.png",
-                click() {
-                    FuncSetLanguageArabic();
                 },
             },
             {
