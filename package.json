@@ -34,15 +34,15 @@
   },
   "license": "ISC",
   "dependencies": {
-    "sqlite3": "^5.0.2",
     "auto-launch": "^5.0.5",
     "electron-window-state": "^5.0.3",
     "jquery": "^3.6.0",
     "knex": "^0.95.6",
-    "node-powershell": "^4.0.0"
+    "node-powershell": "^4.0.0",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
-    "electron": "^13.1.2",
+    "electron": "^13.6.9",
     "electron-builder": "^22.11.7"
   }
 }
