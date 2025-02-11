@@ -149,15 +149,15 @@ I wanted to make a program Similar notPad, but now that I have completed it, may
 # };
 
 # Image from Page App : {
-![image](https://user-images.githubusercontent.com/74311184/125609599-d2827186-8db9-464e-b99d-c0f8066af54b.png)
-![image](https://user-images.githubusercontent.com/74311184/125609598-b994da1b-db06-48fa-b6c8-02ea983330da.png)
-![image](https://user-images.githubusercontent.com/74311184/125609590-7524417a-0323-4bf2-97e8-5a3096a71850.png)
-![image](https://user-images.githubusercontent.com/74311184/125609593-fd216a80-6c29-4a4e-ba23-5a217873d62f.png)
-![image](https://user-images.githubusercontent.com/74311184/125609732-e07fe436-390d-43c5-88bf-b533e3e4c5a7.png)
-![image](https://user-images.githubusercontent.com/74311184/125609731-a9c985c4-323e-4776-a8bc-052d1de98941.png)
-![image](https://user-images.githubusercontent.com/74311184/125609729-088a5dd6-5dec-4d01-8f3f-533d44b4b10c.png)
-![image](https://user-images.githubusercontent.com/74311184/125610018-bb9ee8c3-c215-4f9b-9ff3-071aa949066d.png)
-![image](https://user-images.githubusercontent.com/74311184/125610023-9a65653f-0a01-4f9f-b001-7862d34f8c7a.png)
+![image](https://user-Images.githubusercontent.com/74311184/125609599-d2827186-8db9-464e-b99d-c0f8066af54b.png)
+![image](https://user-Images.githubusercontent.com/74311184/125609598-b994da1b-db06-48fa-b6c8-02ea983330da.png)
+![image](https://user-Images.githubusercontent.com/74311184/125609590-7524417a-0323-4bf2-97e8-5a3096a71850.png)
+![image](https://user-Images.githubusercontent.com/74311184/125609593-fd216a80-6c29-4a4e-ba23-5a217873d62f.png)
+![image](https://user-Images.githubusercontent.com/74311184/125609732-e07fe436-390d-43c5-88bf-b533e3e4c5a7.png)
+![image](https://user-Images.githubusercontent.com/74311184/125609731-a9c985c4-323e-4776-a8bc-052d1de98941.png)
+![image](https://user-Images.githubusercontent.com/74311184/125609729-088a5dd6-5dec-4d01-8f3f-533d44b4b10c.png)
+![image](https://user-Images.githubusercontent.com/74311184/125610018-bb9ee8c3-c215-4f9b-9ff3-071aa949066d.png)
+![image](https://user-Images.githubusercontent.com/74311184/125610023-9a65653f-0a01-4f9f-b001-7862d34f8c7a.png)
 # };
 
 # bugs: {

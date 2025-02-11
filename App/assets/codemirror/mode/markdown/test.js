@@ -823,7 +823,7 @@
   MT("imageEm",
      "[image&image-marker !][image&image-alt-text&link [[][image-alt-text&em&image&link *alt text*][image&image-alt-text&link ]]][string&url (http://link.to/image.jpg)]");
 
-  MT("imageStrong",
+  MT("Imagestrong",
      "[image&image-marker !][image&image-alt-text&link [[][image-alt-text&strong&image&link **alt text**][image&image-alt-text&link ]]][string&url (http://link.to/image.jpg)]");
 
   MT("imageEmStrong",

@@ -380,8 +380,8 @@ reST supports an image directive (:dudir:`ref &lt;image&gt;`), used like so::
 When used within Sphinx, the file name given (here ``gnu.png``) must either be
 relative to the source file, or absolute which means that they are relative to
 the top source directory.  For example, the file ``sketch/spam.rst`` could refer
-to the image ``images/spam.png`` as ``../images/spam.png`` or
-``/images/spam.png``.
+to the image ``Images/spam.png`` as ``../Images/spam.png`` or
+``/Images/spam.png``.
 
 Sphinx will automatically copy image files over to a subdirectory of the output
 directory on building (e.g. the ``_static`` directory for HTML output.)
@@ -396,7 +396,7 @@ extension::
 
    .. image:: gnu.*
 
-Sphinx then searches for all images matching the provided pattern and determines
+Sphinx then searches for all Images matching the provided pattern and determines
 their type.  Each builder then chooses the best image out of these candidates.
 For instance, if the file name ``gnu.*`` was given and two files :file:`gnu.pdf`
 and :file:`gnu.png` existed in the source tree, the LaTeX builder would choose

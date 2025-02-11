@@ -4396,8 +4396,8 @@ void main()
     const FuncAbout = () => {
         ElectronMenusRemote.dialog.showMessageBox(MainWindow, {
             title: "About",
-            message: `Another : Amir Mohammad
-Address Github : https://github.com/amirmohammad0000
+            message: `Another : Amir Koshkian
+Address Github : https://github.com/amirkoshkian
 Version : 1.0.0
 Electron : v13.1.6
 Chrome : v91.0.4472.124
@@ -4408,8 +4408,8 @@ V8 : v9.1.269.36-electron.0`,
             icon: ___dirname + "\\assets\\Images\\icon.png",
         }).then((val) => {
             if (val.response === 1) {
-                ElectronMenusRemote.clipboard.writeText(`Another : Amir Mohammad
-Address Github : https://github.com/amirmohammad0000
+                ElectronMenusRemote.clipboard.writeText(`Another : Amir Koshkian
+Address Github : https://github.com/amirkoshkian
 Version : 1.0.0
 Electron : v13.1.6
 Chrome : v91.0.4472.124
@@ -4421,19 +4421,13 @@ V8 : v9.1.269.36-electron.0`, "clipboard");
     const FuncDonate = () => {
         ElectronMenusRemote.dialog.showMessageBox(MainWindow, {
             title: "Donate",
-            message: `Hi, this is an open source program. If you are satisfied with this program, it is great.You can give us a small donation and pay us a little money.So that we can create other and better open source projects, and you have supported open source projects with this payment, and you have supported the openness of such projects.
-
-
-Account Number Payeer : P1033138596
-Bitcoin : 39EfFAs4KFUizf2v3gRLR9hDBVVLCkB6VK`,
+            message: ``,
             type: "info",
             buttons: ["Ok", "copy"],
             icon: ___dirname + "\\assets\\Images\\icon.png",
         }).then((val) => {
             if (val.response === 1) {
-                ElectronMenusRemote.clipboard.writeText(`Hi, this is an open source program. If you are satisfied with this program, it is great.You can give us a small donation and pay us a little money.So that we can create other and better open source projects, and you have supported open source projects with this payment, and you have supported the openness of such projects.
-Account Number Payeer : P1033138596
-Bitcoin : 39EfFAs4KFUizf2v3gRLR9hDBVVLCkB6VK`, "clipboard");
+                ElectronMenusRemote.clipboard.writeText(``, "clipboard");
             }
         });
     };
