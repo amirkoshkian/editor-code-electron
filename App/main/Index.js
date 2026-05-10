@@ -4397,7 +4397,7 @@ void main()
         ElectronMenusRemote.dialog.showMessageBox(MainWindow, {
             title: "About",
             message: `Another : Amir Koshkian
-Address Github : https://github.com/amirkoshkian
+Github Address : https://github.com/amirkoshkian
 Version : 1.0.0
 Electron : v13.1.6
 Chrome : v91.0.4472.124
@@ -4409,7 +4409,7 @@ V8 : v9.1.269.36-electron.0`,
         }).then((val) => {
             if (val.response === 1) {
                 ElectronMenusRemote.clipboard.writeText(`Another : Amir Koshkian
-Address Github : https://github.com/amirkoshkian
+Github Address : https://github.com/amirkoshkian
 Version : 1.0.0
 Electron : v13.1.6
 Chrome : v91.0.4472.124
